@@ -6,3 +6,6 @@ dist
 *.rbc
 koans/*
 *~
+
+# editor
+*.sw[a-z]
