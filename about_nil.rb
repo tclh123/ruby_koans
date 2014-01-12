@@ -1,8 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutNil < Neo::Koan
+  # 吐槽 xxx.is_a? 这方法起得真nb....还带问号的....
   def test_nil_is_an_object
-    assert_equal __, nil.is_a?(Object), "Unlike NULL in other languages"
+    assert_equal true, nil.is_a?(Object), "Unlike NULL in other languages"
   end
 
   def test_you_dont_get_null_pointer_errors_when_calling_methods_on_nil
