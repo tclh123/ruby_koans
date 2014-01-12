@@ -409,6 +409,7 @@ ENDTEXT
   end
 
   class Koan
+    # 疑问: module 直接被 class include 进来了？
     include Assertions
 
     attr_reader :name, :failure, :koan_count, :step_count, :koan_file
