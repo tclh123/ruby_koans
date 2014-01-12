@@ -173,6 +173,8 @@ module Neo
 
     def assert_match(pattern, actual, msg=nil)
       msg ||= "Expected #{actual.inspect} to match #{pattern.inspect}"
+      # 吐槽: Ruby 某些语法真的跟 bash 略像啊，难怪这么不友好....
+      # 疑问 pattern string 要用 '/pattern/' 这样?
       assert pattern =~ actual, msg
     end
 
